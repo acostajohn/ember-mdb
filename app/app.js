@@ -10,7 +10,7 @@ var App = Ember.Application.extend({
   Resolver: Resolver
 });
 
-var loggedIn = true,
+var loggedIn = false,
   FIXTURES = {
     'actors': [
       { id: '1', name: 'Sylvester Stallone', age: 68},
