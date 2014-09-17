@@ -1,0 +1,13 @@
+
+.thumbnail .list-item-title {
+  display: block;
+  font-size: 1.3em;
+  padding: 0.6em 0.2em;
+  text-align: center;
+}
+
+.thumbnail .image {
+  background-color: #EEE;
+  box-sizing: border-box;
+  padding-bottom: 90%;
+}

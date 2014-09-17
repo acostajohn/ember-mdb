@@ -1,0 +1,13 @@
+.movie-detail .tagline-item {
+  float: left;
+  margin-right: 10%;
+}
+
+.movie-detail .metadata {
+  margin-bottom: 2%;
+}
+
+.movie-detail .list-item-title small {
+  display: block;
+  text-align: center;
+}
