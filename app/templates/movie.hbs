@@ -1,16 +1,16 @@
 <div class="row movie-detail">
-  <h2>{{ title }}</h2>
+  <h2 class="movie-title">{{ title }}</h2>
   <div class="col-md-6">
     <div class="metadata clearfix">
-      <small class="tagline-item"><strong>Score:</strong> {{to-percentage score}}</small>
-      <small class="tagline-item"><strong>Release Date:</strong> {{to-date release}}</small>
+      <small class="tagline-item" data-js="score"><strong>Score:</strong> <span>{{to-percentage score}}</span></small>
+      <small class="tagline-item" data-js="release-date"><strong>Release Date:</strong> <span>{{to-date release}}</span></small>
     </div>
     <div class="thumbnail">
       <div class="image"></div>
     </div>
   </div>
 
-  <div class="col-md-6">
+  <div class="col-md-6" data-js="actors-list">
     <h3>Cast</h3>
     <div class="row">
       {{#each actors}}
