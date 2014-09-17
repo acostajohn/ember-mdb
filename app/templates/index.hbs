@@ -1,0 +1,26 @@
+<div class="row movies-list">
+  <div class="col-md-6">
+    <div class="row">
+      <h2>Movies</h2>
+      {{#each movies}}
+        <div class="col-md-4 list-item">
+          {{#link-to "movie" this class="thumbnail"}}
+            <div class="image"></div>
+            <span class="list-item-title">{{ title }}</span>
+          {{/link-to}}
+        </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <h2>Actors</h2>
+      {{#each oldestActors}}
+        <div class="col-md-4 list-item">
+          <div class="image"></div>
+          <span class="list-item-title">{{ name }}</span>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
