@@ -15,4 +15,5 @@ function toPercentage(value) {
   return value + '%';
 }
 
+export { toPercentage };
 export default Ember.Handlebars.makeBoundHelper(toPercentage);

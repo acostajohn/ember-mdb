@@ -1,3 +1,4 @@
+/* global moment */
 import Ember from 'ember';
 
 /**
@@ -13,4 +14,6 @@ function toDate(timestamp) {
   }
 }
 
+
+export { toDate };
 export default Ember.Handlebars.makeBoundHelper(toDate);
