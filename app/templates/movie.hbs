@@ -1,3 +1,29 @@
-<div class="row movies-detail">
-  <h3>{{ title }}</h3>
+<div class="row movie-detail">
+  <h2>{{ title }}</h2>
+  <div class="col-md-6">
+    <div class="metadata clearfix">
+      <small class="tagline-item"><strong>Score:</strong> {{to-percentage score}}</small>
+      <small class="tagline-item"><strong>Release Date:</strong> {{to-date release}}</small>
+    </div>
+    <div class="thumbnail">
+      <div class="image"></div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <h3>Cast</h3>
+    <div class="row">
+      {{#each actors}}
+        <div class="col-md-4 list-item">
+          <div class="thumbnail">
+            <div class="image"></div>
+            <span class="list-item-title">
+              {{ name }}
+              <small>{{ age }} years old</small>
+            </span>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
 </div>
